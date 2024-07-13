@@ -1,5 +1,8 @@
+from __future__ import annotations
+
+
 def solve():
-    return "Hello"
+    return "Bye"
 
 
 def check(reply):

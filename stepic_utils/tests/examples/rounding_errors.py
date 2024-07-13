@@ -1,6 +1,8 @@
+from __future__ import annotations
+
 import random
 
-from stepic_common import nice, equal_floats
+from stepic_common import nice
 
 LOW = 1
 HIGH = 10
@@ -17,4 +19,6 @@ def solve(dataset):
     return str(a + b)
 
 
-check = equal_floats
+def check(reply, hint):
+    d = 1e-8
+    return 1 + d if int(reply) == int(hint) else d

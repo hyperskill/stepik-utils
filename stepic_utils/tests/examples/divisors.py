@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import random
 
 from stepic_common import nice
@@ -17,7 +19,7 @@ def solve(dataset):
     for p in range(2, pq + 1):
         if pq % p == 0:
             return nice(p, pq // p)
-    assert False
+    raise AssertionError
 
 
 def check(reply, clue):

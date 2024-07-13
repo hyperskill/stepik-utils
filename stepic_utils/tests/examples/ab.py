@@ -1,6 +1,8 @@
+from __future__ import annotations
+
 import random
 
-from stepic_common import nice, equal_int
+from stepic_common import equal_int, nice
 
 LOW = 1
 HIGH = 10

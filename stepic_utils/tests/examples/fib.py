@@ -1,9 +1,11 @@
+from __future__ import annotations
+
 import random
 
 
 def generate():
     n = random.randrange(5, 10)
-    return str(n), (fib_n(n), fib_n(n-1), fib_n(n+1))
+    return str(n), (fib_n(n), fib_n(n - 1), fib_n(n + 1))
 
 
 def solve(dataset):
@@ -15,7 +17,7 @@ def check(reply, clue):
     reply = int(reply)
     if reply == clue[0]:
         return 1
-    elif reply in clue:
+    if reply in clue:
         return 0, "Check indices. Off by one error."
     return 0
 

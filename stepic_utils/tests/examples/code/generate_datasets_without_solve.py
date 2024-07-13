@@ -1,5 +1,8 @@
+from __future__ import annotations
+
+
 def generate():
-    return ['2 2\n', '5 7\n']
+    return ["2 2\n", "5 7\n"]
 
 
 def check(reply, clue):
